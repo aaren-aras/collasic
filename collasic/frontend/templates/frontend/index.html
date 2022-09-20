@@ -1,0 +1,34 @@
+<!-- All HTML files begin with a 'document type declaration' to inform browser about version # (HTML5) -->
+<!-- They contain 'tags', which define how web browsers will format and display content; some are 
+considered 'void elements', and don't need closing tags (e.g., '<meta>', '<link>', '<input>'', ...) -->
+<!DOCTYPE html>           
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Collasic</title>
+        {% load static %} <!-- Loads 'static' folder to view JavaScript code to be bundled -->
+        <!-- Scripts and style sheets from MaterialUI's component libraries -->
+        <!-- Style Sheets: Define the layout of documents, including size, margins, fonts, font sizes, ... -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link 
+            rel="stylesheet" 
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        />
+        <!-- rel = relation (specifies relationship between current doc and linked doc (stylesheet)) -->
+        <!-- href = hypertext reference (for <link>: specifies URL of linked doc (stylesheet))-->
+        <link 
+            rel="stylesheet" 
+            type="text/css"
+            href="{% static "css/index.css" %}"
+        />
+    </head>
+    <body>
+        <div id="main">
+            <!-- React code enters 'app' <div>ision to render and display components -->
+            <div id="app"></div> 
+        </div>
+    <!-- Loads main JavaScript file to be used as Bundle with 'static' folder -->
+    <script src="{% static "frontend/main.js" %}"></script>
+    </body>
+</html>

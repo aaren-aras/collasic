@@ -1,0 +1,22 @@
+/* Could also use .babelrc.json to affect only SOME files, but babel.config.json used to affect ALL
+under a single Babel config */
+
+/* Babel: Toolchain for transpiling ECMAScript2015+ code into backwards compatible JavaScript versions
+used in older (and current) web browsers or environments. */
+
+{
+    // Sets up babel-loader
+    "presets": [
+      [
+        "@babel/preset-env", // Environment preset
+        {
+          "targets": {
+            "node": "10" // Node.js version 10 (bug in newer versions)
+          }
+        }
+      ],
+      "@babel/preset-react" // React.js preset
+    ],
+    "plugins": ["@babel/plugin-proposal-class-properties"] // Enables use of async and await
+  } 
+  
