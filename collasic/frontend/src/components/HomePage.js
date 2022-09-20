@@ -22,7 +22,7 @@ export default class HomePage extends Component {
             <Router>
                 <Switch> 
                     <Route exact path="/"> 
-                        <p>This do be the home page</p> 
+                        <p>This do be the home clpage</p> 
                     </Route>
                     <Route path="/create" component={CreateLobbyPage}/>
                     <Route path="/join" component={JoinLobbyPage}/>
