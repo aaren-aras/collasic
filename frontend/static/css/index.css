@@ -1,0 +1,26 @@
+/* 'index.css': Setting up layout design and expanding 'main' and 'app' <div>s from 'index.html' */ 
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0; /* Space between an element's content and border (https://bit.ly/3whPk60) */
+   /* color: white; <-- Adding colour later in tutorial */  
+}
+
+/* Applying styles to 'main' <div> (wraps/encloses 'app' <div>) */
+#main {
+    position: fixed;
+    /* Fills the entire screen */
+    height: 100%;
+    width: 100%;
+    /* Places <div> onto top-left corner of screen */ 
+    left: 0;
+    top: 0;
+}
+
+/* Applying styles to 'app' <div> */
+#app {
+    height: 100%;
+    width: 100%;
+    /* Auto-aligns child elements to optimally fill available space (https://bit.ly/3KigT4U) */
+    display: flex;
+}
